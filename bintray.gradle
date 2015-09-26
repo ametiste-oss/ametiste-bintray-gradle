@@ -10,7 +10,7 @@ publishing {
             }
             groupId group
             artifactId module.name
-            version bintray_version_released
+            version project.version
         }
     }
 }
@@ -27,7 +27,7 @@ bintray {
         vcsUrl = bintray_vcsUrl
         publications = bintray_publications
         version  {
-            name = bintray_version_name
+            name = project.version
             desc = bintray_version_desc
             released = bintray_version_released
             vcsTag = bintray_version_vcsTag
