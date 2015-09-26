@@ -10,7 +10,7 @@ publishing {
             }
             groupId group
             artifactId module.name
-            version project.version
+            version bintray_version_released
         }
     }
 }
