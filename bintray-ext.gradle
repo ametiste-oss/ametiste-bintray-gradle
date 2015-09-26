@@ -1,5 +1,7 @@
 ext {
 
+    bintray_user = project.properties.bintray_user
+    bintray_api_key = project.properties.bintray_api_key
     bintray_name = module.name
     bintray_version_name = project.version
     bintray_version_desc = project.description
