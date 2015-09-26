@@ -5,6 +5,6 @@ ext {
     bintray_version_desc = project.description
     bintray_version_released = new Date()
     bintray_version_vcsTag = project.version
-    bintray_publications = [‘mavenJava’]
+    bintray_publications = ['mavenJava']
 
 }
