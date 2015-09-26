@@ -1,0 +1,6 @@
+ext {
+    bintray_repo = 'maven'
+    bintray_userOrg = 'ametiste-oss'
+    bintray_licenses = ['Apache-2.0']
+
+}

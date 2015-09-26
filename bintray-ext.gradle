@@ -1,0 +1,10 @@
+ext {
+
+    bintray_name = module.name
+    bintray_version_name = project.version
+    bintray_version_desc = project.description
+    bintray_version_released = new Date()
+    bintray_version_vcsTag = project.version
+    bintray_publications = ['AmetisteBintrayPublication']
+
+}
