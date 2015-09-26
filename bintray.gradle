@@ -1,0 +1,36 @@
+publishing {
+    publications {
+        AmetisteBintrayPublication(MavenPublication) {
+            from components.java
+            artifact(sourcesJar) {
+                classifier "sources"
+            }
+            artifact(javadocJar) {
+                classifier "javadoc"
+            }
+            groupId group
+            artifactId module.name
+            version project.version
+        }
+    }
+}
+
+bintray {
+    user = bintray_user
+    key = bintray_api_key
+
+    pkg {
+        repo = bintray_repo
+        name = module.name
+        userOrg = bintray_userOrg
+        licenses = bintray_licenses
+        vcsUrl = bintray_vcsUrl
+        publications = bintray_publications
+        version  {
+            name = bintray_version_name
+            desc = bintray_version_desc
+            released = bintray_version_released
+            vcsTag = bintray_version_vcsTag
+        }
+    }
+}
